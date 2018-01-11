@@ -1,0 +1,174 @@
+body{
+  font-family:ubuntu light, Arial;
+  /*background: linear-gradient(yellow, orange);*/
+}
+
+@media print {
+	 {
+    display:none;
+  	}
+
+  	body {
+    font-size:120%;
+    color:black;
+  }
+}
+
+/*___________Titre/Sous-titre________________________________________*/
+
+h1{
+	font-weight: bold;
+	text-align: center;
+}
+
+
+h4{
+	font-style: italic;
+	color: #7d3c98;
+}
+
+h3{
+	font-style: italic;
+	color: #e8daef;
+}
+img{
+	width: 51px;
+	height:51px;
+}
+
+
+.conteneur{
+	display:flex;
+}
+
+/*___________Box Profil________________________________________*/
+
+.profil{
+	width: 30%;
+	height: 800px;
+	padding: 2%;
+	background-color: #6c3483;
+	color: #e8daef;
+}
+
+
+#photo_profil{
+	text-align: center;
+}
+
+
+#photo{
+	width: 200px;
+	height:200px;
+}
+
+
+#reseaux_sociaux{
+	padding-left: 55px;
+}
+
+
+#logo{
+	padding-left: 200px;
+}
+
+
+#map{
+	/*text-align: center;*/
+	position:absolute;
+	margin-left: 145px;
+	margin-top: -250px;
+	z-index: 1;
+}
+
+#bouton{
+	position: absolute;
+	margin-left: 165px;
+
+}
+
+/*___________Box Degrade________________________________________*/
+
+.degrade{
+   background-image: linear-gradient(yellow 10%, orange 90%);
+   position: absolute;
+   top: 0px;
+   left: 30%;
+   width: 73%;
+   height: 800px;
+   margin-left: -46px;
+   margin-top: 8px;
+   z-index: -1;
+}
+
+/*___________Box References________________________________________*/
+
+.references{
+	top:0px;
+	width: 80%;
+	height: 50%;
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-left: 10%;
+	margin-right: 10%;
+
+
+}
+
+
+#titre{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 5px;
+	background-color: #e8daef;
+	color: #4a2350;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+
+#techno{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	background-color: #e8daef;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+
+#competence{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 5px;
+	background-color: #e8daef;
+	column-count: 3;
+	column-width: 100px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#formation{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 5px;
+	background-color: #e8daef;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#projet{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 5px;
+	background-color: #e8daef;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#experience{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 5px;
+	background-color: #e8daef;
+	border-radius: 10px 10px 10px 10px;
+}
+
