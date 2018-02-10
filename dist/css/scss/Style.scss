@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
+body {
+    width: 100%;
+    height: auto;
+    font-family: Ubuntu;
+    margin: auto;
+    background:rgb(51, 46, 46);
+    #barnav {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        background: rgb(179, 117, 117);
+        width: 100%;
+        height: 11vh;
+        box-shadow: 2px;
+        opacity: 0.95;
+        box-shadow: 0px 5px 10px 0px rgb(77, 72, 72);
+        text-align: center;
+        #containermenu {
+            display: flex;
+            position: relative;
+            .menu {
+                left: 60%;
+                margin-right: 2rem;
+                cursor: pointer;
+                color: white;
+                text-align: center;
+                white-space: pre-line;
+                .titre:hover {
+                    color: black;
+                }
+                .titre {
+                    font-size: 2.7vh;
+                }
+            }
+        }
+        #moi {
+            position: relative;
+            left: 11.8%;
+            img {
+                height: 8vh;
+                width: 8vh;
+                border-radius: 50%;
+                border: solid 0.1px transparent;
+                cursor: pointer;
+            }
+            img:hover {
+                border: 2px solid rgb(255, 89, 89);
+            }
+        }
+    }
+    #filter {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #91928d;
+        opacity: 0.2; // filter: blur(10px);
+        #fléche {
+            border-radius: 50%;
+            background: whitesmoke;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: 40%;
+            img {
+                margin: 5px;
+                opacity: 3;
+                height: 40px;
+                width: 40px;
+                cursor: pointer; // background: black;
+            }
+        }
+        #fléche:hover {
+            background: transparent;
+        }
+    }
+    #containerinfo {
+        top: 45em;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .info {
+            margin-bottom: 20em;
+            position: relative;
+            width: 90%;
+            height: 30em;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 1px 1px 12px rgb(77, 72, 72);
+        }
+    }
+}
