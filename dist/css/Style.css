@@ -4,85 +4,146 @@ body {
   width: 100%;
   height: auto;
   font-family: Ubuntu;
-  margin: auto;
-  background: #332e2e; }
-  body #barnav {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: fixed;
-    z-index: 10;
-    background: #b37575;
-    width: 100%;
-    height: 11vh;
-    box-shadow: 2px;
-    opacity: 0.95;
-    box-shadow: 0px 5px 10px 0px #4d4848;
-    text-align: center; }
-    body #barnav #containermenu {
+  margin: 0;
+  background: linear-gradient(to bottom, #82b3b3 0%, #6ea890 50%, #f8d856ca 100%);
+  vertical-align: baseline; }
+  body header {
+    border-radius: 50%;
+    vertical-align: baseline;
+    width: auto;
+    height: auto;
+    margin: auto; }
+    body header #barnav {
+      vertical-align: baseline;
+      justify-content: center;
+      align-items: center;
       display: flex;
-      position: relative; }
-      body #barnav #containermenu .menu {
-        left: 60%;
-        margin-right: 2rem;
-        cursor: pointer;
-        color: white;
-        text-align: center;
-        white-space: pre-line; }
-        body #barnav #containermenu .menu .titre:hover {
-          color: black; }
-        body #barnav #containermenu .menu .titre {
-          font-size: 2.7vh; }
-    body #barnav #moi {
-      position: relative;
-      left: 11.8%; }
-      body #barnav #moi img {
-        height: 8vh;
-        width: 8vh;
-        border-radius: 50%;
-        border: solid 0.1px transparent;
-        cursor: pointer; }
-      body #barnav #moi img:hover {
-        border: 2px solid #ff5959; }
+      position: fixed;
+      z-index: 10;
+      background: #e0be33;
+      width: 100%;
+      height: 11vh;
+      opacity: 0.95;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      text-align: center; }
+      body header #barnav #containermenu {
+        vertical-align: baseline;
+        display: flex;
+        position: relative; }
+        body header #barnav #containermenu .menu {
+          vertical-align: baseline;
+          margin-right: 4vh;
+          color: white;
+          text-align: center;
+          white-space: pre-line; }
+          body header #barnav #containermenu .menu .titre:hover {
+            color: #464541; }
+          body header #barnav #containermenu .menu .titre {
+            cursor: pointer;
+            vertical-align: baseline;
+            font-size: 2.7vh; }
+      body header #barnav #moi {
+        vertical-align: baseline;
+        position: relative;
+        left: 11.8%; }
+        body header #barnav #moi img {
+          vertical-align: baseline;
+          height: 8vh;
+          width: 8vh;
+          border-radius: 50%;
+          border: solid 0.1px transparent;
+          cursor: pointer; }
+        body header #barnav #moi img:hover {
+          border: solid 1px #fffef1;
+          -webkit-box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
+          -moz-box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
+          box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705); }
   body #filter {
+    vertical-align: baseline;
     justify-content: center;
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100%;
-    background: #91928d;
+    height: 100vh;
+    background: #7c7969;
     opacity: 0.2; }
     body #filter #fléche {
+      vertical-align: baseline;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      vertical-align: baseline;
       border-radius: 50%;
       background: whitesmoke;
-      height: 50px;
-      width: 50px;
+      height: 8vh;
+      width: 8vh;
       position: relative;
       top: 40%; }
       body #filter #fléche img {
-        margin: 5px;
+        vertical-align: baseline;
         opacity: 3;
-        height: 40px;
-        width: 40px;
-        cursor: pointer; }
+        height: 6vh;
+        width: 6vh;
+        cursor: pointer;
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite; }
+@keyframes bounce {
+  0%,
+                20%,
+                50%,
+                80%,
+                100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-2vh); }
+  60% {
+    transform: translateY(-1vh); } }
+      body #filter #fléche img:hover {
+        animation: none; }
     body #filter #fléche:hover {
       background: transparent; }
+  body #intitulé {
+    font-weight: bold;
+    text-decoration: underline #e0be33;
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 4vh; }
   body #containerinfo {
-    top: 45em;
+    vertical-align: baseline;
+    top: 20vh;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center; }
     body #containerinfo .info {
-      margin-bottom: 20em;
+      vertical-align: baseline;
+      margin-bottom: 40vh;
       position: relative;
       width: 90%;
-      height: 30em;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 1px 1px 12px #4d4848; }
+      height: 75vh;
+      background-image: radial-gradient(circle, #ffffff, #f9f9f9, #f3f3f3, #eeeeee, #e8e8e8);
+      border-radius: 3px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    body #containerinfo .info:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    body #containerinfo #end {
+      vertical-align: baseline; }
+  body footer {
+    width: 98%;
+    height: 25vh;
+    position: relative;
+    margin: 1%; }
 
 /*# sourceMappingURL=Style.css.map */
