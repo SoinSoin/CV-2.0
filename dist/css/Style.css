@@ -187,21 +187,15 @@ footer {
   position: relative;
   margin: 1%; }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .info {
+    display: block;
+    width: 52em;
+    height: 30em; } }
 @media all and (min-width: 480px) and (max-width: 768px) {
   .info {
     display: block;
-    width: 20em;
-    height: 25em; } }
-@media all and (min-width: 320px) and (max-width: 480px) {
-  .info {
-    display: block;
-    width: 20em;
-    height: 25em; } }
-@media all and (max-width: 320px) {
-  .info {
-    display: block;
-    width: 18em;
-    height: 24em; } }
-/* iPad Landscape */
+    width: 45em;
+    height: 30em; } }
 
 /*# sourceMappingURL=Style.css.map */

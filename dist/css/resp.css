@@ -3,7 +3,7 @@
     display: block;
     width: 56em;
     height: 68.5em; } }
-@media screen and (max-device-width: 481px) and (orientation: landscape) {
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
   .info {
     display: block;
     width: 56em;
