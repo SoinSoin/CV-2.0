@@ -115,13 +115,12 @@ header {
       justify-content: center;
       display: flex;
       align-items: center;
-      vertical-align: baseline;
       border-radius: 50%;
       background: whitesmoke;
       height: 3.5em;
       width: 3.5em;
-      position: relative;
-      top: 25.5vh; }
+      position: absolute;
+      top: 89vh; }
       #filter #elementfiltre #fléche #arrowbot {
         vertical-align: baseline;
         opacity: 3;
@@ -133,10 +132,10 @@ header {
         animation: bounce 2s infinite; }
 @keyframes bounce {
   0%,
-                    20%,
-                    50%,
-                    80%,
-                    100% {
+                   20%,
+                   50%,
+                   80%,
+                   100% {
     transform: translateY(0); }
   40% {
     transform: translateY(-2vh); }
@@ -149,10 +148,10 @@ header {
 
 @keyframes bounce {
   0%,
-        20%,
-        50%,
-        80%,
-        100% {
+       20%,
+       50%,
+       80%,
+       100% {
     transform: translateY(0); }
   40% {
     transform: translateY(-10%); }
