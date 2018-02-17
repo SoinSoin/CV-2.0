@@ -40,58 +40,62 @@
        width: auto;
        height: auto;
        margin: auto;
-       #barnav {
+   }
+   
+   #barnav {
+       vertical-align: baseline;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       position: fixed;
+       z-index: 10;
+       background: #e0be33;
+       width: 100%;
+       height: 4em;
+       opacity: 0.95;
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+       text-align: center;
+   }
+
+
+   #containermenu {
+       vertical-align: baseline;
+       display: flex;
+       position: relative;
+       .menu {
            vertical-align: baseline;
-           justify-content: center;
-           align-items: center;
-           display: flex;
-           position: fixed;
-           z-index: 10;
-           background: #e0be33;
-           width: 100%;
-           height: 4em;
-           opacity: 0.95;
-           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+           margin-right: 4vh;
+           color: white;
            text-align: center;
-           #containermenu {
-               vertical-align: baseline;
-               display: flex;
-               position: relative;
-               .menu {
-                   vertical-align: baseline;
-                   margin-right: 4vh;
-                   color: white;
-                   text-align: center;
-                   white-space: pre-line;
-                   .titre:hover {
-                       color: #464541;
-                   }
-                   .titre {
-                       cursor: pointer;
-                       vertical-align: baseline;
-                       font-size: 1.1em;
-                   }
-               }
+           white-space: pre-line;
+           .titre:hover {
+               color: #464541;
            }
-           #moi {
+           .titre {
+               cursor: pointer;
                vertical-align: baseline;
-               position: relative;
-               left: 11.8%;
-               #fotome {
-                   vertical-align: baseline;
-                   height: 3.3em;
-                   width: 3.3em;
-                   border-radius: 50%;
-                   border: solid 0.1px transparent;
-                   cursor: pointer;
-               }
-               #fotome:hover {
-                   border: solid 1px rgb(255, 254, 241);
-                   -webkit-box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
-                   -moz-box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
-                   box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
-               }
+               font-size: 1.1em;
            }
+       }
+   }
+
+   #moi {
+       vertical-align: baseline;
+       position: relative;
+       left: 11.8%;
+       #fotome {
+           vertical-align: baseline;
+           height: 3.3em;
+           width: 3.3em;
+           border-radius: 50%;
+           border: solid 0.1px transparent;
+           cursor: pointer;
+       }
+       #fotome:hover {
+           border: solid 1px rgb(255, 254, 241);
+           -webkit-box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
+           -moz-box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
+           box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
        }
    }
 
@@ -129,7 +133,8 @@
                vertical-align: baseline;
                justify-content: center;
                display: flex;
-               align-items: center;;
+               align-items: center;
+               ;
                border-radius: 50%;
                background: whitesmoke;
                height: 3.5em;
@@ -220,19 +225,3 @@
        position: relative;
        margin: 1%;
    } //laptop
-
-   @media all and (min-width: 768px) and (max-width: 1024px) {
-    .info {
-        display: block;
-        width: 52em;
-        height: 30em;
-    }
-   }
-
-   @media all and (min-width: 480px) and (max-width: 768px) {
-       .info {
-           display: block;
-           width: 45em;
-           height: 30em;    
-       }
-   }
