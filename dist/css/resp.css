@@ -13,5 +13,19 @@
     display: block;
     width: 16em;
     height: 21em; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .info {
+    display: block;
+    width: 20em;
+    height: 26em; } }
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .info {
+    display: block;
+    width: 20em;
+    height: 26em; } }
+/* iPhone Landscape */
+/* iPad Portrait */
+/* iPad Landscape */
 
 /*# sourceMappingURL=resp.css.map */
