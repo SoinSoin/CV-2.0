@@ -1,12 +1,16 @@
 $(document).ready(function test() {
 
     $(document).alton({
-        firstClass : 'header', // Set the first container class
+        firstClass: 'header', // Set the first container class
         scrollMode: 'headerScroll', // Set the scroll mode
     });
 
 
     if (window.matchMedia("(max-width: 1024px)").matches) {
+        $(document).alton({
+            firstClass: 'header', // Set the first container class
+            scrollMode: 'headerScroll', // Set the scroll mode
+        });
         var forEach = function (t, o, r) {
             if ("[object Object]" === Object.prototype.toString.call(t))
                 for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
@@ -40,12 +44,18 @@ $(document).ready(function test() {
             }
 
         }
-
-        $(".hamburger-box").click(function () {
+        var bouttonBurg = $(".hamburger");
+        $(".hamburger").click(function () {
+            if (click == false && bouttonBurg.hasClass("is-active")) {
+                $("#macdo").addClass("is-active");
+            } else if (click == true) {
+                $("#macdo").removeClass("is-active");
+            }
             event();
         });
 
     } else {
+        $("#macdo").removeClass("is-active");
         $('#containermenu').css({
             display: 'flex'
         });
