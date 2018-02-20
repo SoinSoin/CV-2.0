@@ -41,12 +41,9 @@
        height: auto;
        margin: auto;
    }
-   
+
    #barnav {
        vertical-align: baseline;
-       justify-content: center;
-       align-items: center;
-       display: flex;
        position: fixed;
        z-index: 10;
        background: #e0be33;
@@ -60,8 +57,13 @@
 
    #containermenu {
        vertical-align: baseline;
+       width: 70%;
+       height: 100%;
        display: flex;
+       justify-content: flex-end;
+       align-items: center;
        position: relative;
+       float: left;
        .menu {
            vertical-align: baseline;
            margin-right: 4vh;
@@ -80,9 +82,14 @@
    }
 
    #moi {
+       display: flex;
+       justify-content: center;
+       align-items: center;
        vertical-align: baseline;
        position: relative;
-       left: 11.8%;
+       width: 30%;
+       height: 100%;
+       float: right;
        #fotome {
            vertical-align: baseline;
            height: 3.3em;
@@ -92,9 +99,8 @@
            cursor: pointer;
        }
        #fotome:hover {
-           border: solid 1px rgb(255, 254, 241);
-           -webkit-box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
-           -moz-box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
+           opacity: 0.8;
+           border: solid 3px #82b3b3;
            box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
        }
    }
