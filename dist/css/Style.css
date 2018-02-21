@@ -17,17 +17,20 @@ body {
     z-index: -10;
     width: 100vh; }
   #nuage #nuage1 {
-    bottom: 16%;
-    left: 10%;
+    top: 75%;
+    left: 2%;
     position: fixed; }
   #nuage #nuage2 {
     position: fixed;
-    top: 45%;
-    right: 48%; }
+    top: 20%;
+    right: 50%; }
   #nuage #nuage3 {
     position: fixed;
-    top: 18%;
-    left: 50%; }
+    top: 45%;
+    left: 60%; }
+
+section {
+  height: auto; }
 
 header {
   border-radius: 50%;
@@ -176,6 +179,9 @@ header {
   align-items: center; }
 
 .info {
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
   vertical-align: baseline;
   margin-bottom: 20em;
   position: relative;
@@ -188,6 +194,14 @@ header {
 
 .info:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.titreinfo {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 2.5%;
+  color: #464541; }
 
 footer {
   width: 98%;
