@@ -1,13 +1,10 @@
 $(document).ready(function () {
-    $(document).alton({
-        firstClass: 'header', // Set the first container class
-        scrollMode: 'headerScroll', // Set the scroll mode
-    });
+
     $("#fotome").on("click", function () {
         window.location.replace("moi.php");
     });
-    
-    $('.titre,#fléche').on('click', function () { // Au clic sur un élément
+
+    $('.titre,#fléche').on(' click', function () { // Au clic sur un élément
         var page = $(this).attr('href'); // Page cible
         var speed = 850; // Durée de l'animation (en ms)
         $('html, body').animate({
@@ -15,25 +12,43 @@ $(document).ready(function () {
         }, speed); // Go
         return false;
     });
-    
-    $("#html").on("click", function () {
-        $("#css").removeClass("test");
-        $("#textcss").hide(800);
+
+    $("#html").on(" click", function () {
+        $("#css,#js,#php,#sql").removeClass("test");
+        $("#textcss,#textjs,#textphp,#textsql").hide(800);
         $("#html").toggleClass("test");
-        $("#texthtml").toggle(800);
-        console.log("passe html");
+        $("#texthtml").toggle(800).css("display","flex");
+        console.log("passe html")
     });
 
-    $("#css").on("click", function () {
-        $("#html").removeClass("test");
-        $("#texthtml").hide(800);
+    $("#css").on(" click", function () {
+        $("#html,#js,#php,#sql").removeClass("test");
+        $("#texthtml,#textjs,#textphp,#textsql").hide(800);
         $("#css").toggleClass("test");
-        $("#textcss").toggle(800);
+        $("#textcss").toggle(800).css("display","flex");
         console.log("passe html");
     });
 
-
-
+    $("#js").on(" click", function () {
+        $("#html,#css,#php,#sql").removeClass("test");
+        $("#texthtml,#textphp,#textsql,#textcss").hide(800);
+        $("#js").toggleClass("test");
+        $("#textjs").toggle(800).css("display","flex");
+        console.log("passe html");
+    });
+    $("#php").on(" click", function () {
+        $("#html,#css,#js,#sql").removeClass("test");
+        $("#texthtml,#textjs,#textsql,#textcss").hide(800);
+        $("#php").toggleClass("test");
+        $("#textphp").toggle(800).css("display","flex");
+    });
+    $("#sql").on(" click", function () {
+        $("#html,#css,#php,#js").removeClass("test");
+        $("#texthtml,#textphp,#textjs,#textcss").hide(800);
+        $("#sql").toggleClass("test");
+        $("#textsql").toggle(800).css("display","flex");
+        console.log("passe html");
+    });
 
 
 
@@ -71,10 +86,10 @@ $(document).ready(function test() {
 
         function event() {
             if (click) {
-                $("#containermenu").slideUp('500');
+                $("#containermenu").slideUp('800');
                 click = false;
             } else {
-                $("#containermenu").slideDown('500');
+                $("#containermenu").slideDown('800');
                 $('#containermenu').css({
                     display: 'flex'
                 });
@@ -83,7 +98,7 @@ $(document).ready(function test() {
 
         }
         var bouttonBurg = $(".hamburger");
-        $(".hamburger").on("click", function () {
+        $(".hamburger,#containermenu").on("click", function () {
             if (click == false && bouttonBurg.hasClass("is-active")) {
                 $("#macdo").addClass("is-active");
             } else if (click == true) {
@@ -100,4 +115,3 @@ $(document).ready(function test() {
     }
     window.addEventListener('resize', test, true);
 });
-

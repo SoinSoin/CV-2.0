@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,700");
 body {
   width: 100%;
   height: auto;
@@ -11,22 +11,22 @@ body {
 
 #nuage img {
   z-index: -10;
-  width: 45em; }
+  width: 45rem; }
 
 #nuage #nuage1 {
-  top: 32em;
-  left: 1em;
+  top: 32rem;
+  left: 1rem;
   position: fixed; }
 
 #nuage #nuage2 {
   position: fixed;
-  top: 10em;
-  right: 30em; }
+  top: 10rem;
+  right: 30rem; }
 
 #nuage #nuage3 {
   position: fixed;
-  top: 22em;
-  left: 45em; }
+  top: 22rem;
+  left: 45rem; }
 
 section {
   height: auto; }
@@ -44,7 +44,7 @@ header {
   z-index: 10;
   background: #e0be33;
   width: 100%;
-  height: 4em;
+  height: 4rem;
   opacity: 0.95;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   text-align: center; }
@@ -69,7 +69,7 @@ header {
       text-decoration: none;
       cursor: pointer;
       vertical-align: baseline;
-      font-size: 1.1em; }
+      font-size: 1.2rem; }
     #containermenu .menu .titre:hover {
       color: #82b3b3; }
     #containermenu .menu .titre:active {
@@ -88,8 +88,8 @@ header {
   float: right; }
   #moi #fotome {
     vertical-align: baseline;
-    height: 3.3em;
-    width: 3.3em;
+    height: 3.3rem;
+    width: 3.3rem;
     border-radius: 50%;
     border: solid 0.1px transparent;
     cursor: pointer; }
@@ -130,7 +130,7 @@ header {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    font-size: 2em; }
+    font-size: 2rem; }
   #filter #fléche {
     opacity: 0.3;
     vertical-align: baseline;
@@ -139,15 +139,15 @@ header {
     align-items: center;
     border-radius: 50%;
     background: whitesmoke;
-    height: 3.5em;
-    width: 3.5em;
+    height: 3.5rem;
+    width: 3.5rem;
     position: absolute;
     top: 89vh; }
     #filter #fléche #arrowbot {
       vertical-align: baseline;
       opacity: 3;
-      height: 2.5em;
-      width: 2.5em;
+      height: 2.5rem;
+      width: 2.5rem;
       cursor: pointer;
       -moz-animation: bounce 2s infinite;
       -webkit-animation: bounce 2s infinite;
@@ -179,7 +179,7 @@ header {
 
 #containerinfo {
   vertical-align: baseline;
-  top: 10em;
+  margin-top: 10rem;
   position: relative;
   width: 100%;
   height: auto;
@@ -189,7 +189,7 @@ header {
   justify-content: center; }
 
 .autourinfo {
-  margin-bottom: 20vh;
+  margin-bottom: 15rem;
   width: 100%;
   height: 108vh;
   display: flex;
@@ -197,10 +197,12 @@ header {
   justify-content: center; }
 
 .info {
+  flex-direction: column;
+  flex-wrap: wrap;
   vertical-align: baseline;
   position: relative;
-  width: 80em;
-  height: 34em;
+  width: 80rem;
+  height: 34rem;
   background-image: radial-gradient(circle, #ffffff, #f9f9f9, #f3f3f3, #eeeeee, #e8e8e8);
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -210,32 +212,39 @@ header {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 #autour {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   float: left;
   width: 20%;
-  height: 70%; }
+  height: 80%; }
 
 .titreinfo {
   position: relative;
-  width: 50%;
-  height: 30%;
-  margin-left: 5%;
-  margin-top: 2.5%;
-  color: #464541; }
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #464541;
+  font-size: 1.5rem; }
 
 #titretechno {
   color: #7DB0AA; }
 
 .bouton {
   border-radius: 3px;
-  border: solid 1px #7DB0AA;
-  margin-left: 2em;
+  border: solid 1.5px #7DB0AA;
+  margin-left: 2rem;
   cursor: pointer;
-  width: 30vh;
+  width: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 6.5vh;
-  margin-bottom: 3.5vh;
+  height: 3rem;
+  margin-bottom: 1.5rem;
   font-weight: 300;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
@@ -243,41 +252,35 @@ header {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1); }
 
 .test {
-  color: #e0bd33be;
-  box-shadow: -1px 0px 10px 4px rgba(179, 179, 179, 0.37) inset;
-  border: none; }
+  border: solid 1.5px #e0be33;
+  background: #7DB0AA;
+  color: whitesmoke; }
 
-#texthtml {
-  font-size: 1.2em;
-  position: relative;
+.divtext {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  float: right;
-  height: 70%;
-  width: 80%;
-  display: none;
-  /* -webkit-border-image: linear-gradient(to right, transparent 20%, #979292 20%, #979292 80%, transparent 80%);
-    border-image-slice: 100%; */ }
-
-#textcss {
+  align-items: center;
   font-size: 3vh;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   float: right;
   height: 70%;
-  width: 80%;
+  width: 75%;
   display: none;
   /* -webkit-border-image: linear-gradient(to right, transparent 20%, #979292 20%, #979292 80%, transparent 80%);
     border-image-slice: 100%; */ }
 
 .texte {
-  margin-left: 2em;
-  margin-right: 2em; }
+  line-height: 1.3;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem; }
+
+#texthtml {
+  display: flex; }
 
 footer {
   width: 98%;
