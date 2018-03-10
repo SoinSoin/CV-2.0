@@ -18,7 +18,6 @@ $(document).ready(function () {
         $("#textcss,#textjs,#textphp,#textsql").hide(800);
         $("#html").toggleClass("test");
         $("#texthtml").toggle(800).css("display","flex");
-        console.log("passe html")
     });
 
     $("#css").on(" click", function () {
@@ -26,7 +25,6 @@ $(document).ready(function () {
         $("#texthtml,#textjs,#textphp,#textsql").hide(800);
         $("#css").toggleClass("test");
         $("#textcss").toggle(800).css("display","flex");
-        console.log("passe html");
     });
 
     $("#js").on(" click", function () {
@@ -34,7 +32,6 @@ $(document).ready(function () {
         $("#texthtml,#textphp,#textsql,#textcss").hide(800);
         $("#js").toggleClass("test");
         $("#textjs").toggle(800).css("display","flex");
-        console.log("passe html");
     });
     $("#php").on(" click", function () {
         $("#html,#css,#js,#sql").removeClass("test");
@@ -47,13 +44,7 @@ $(document).ready(function () {
         $("#texthtml,#textphp,#textjs,#textcss").hide(800);
         $("#sql").toggleClass("test");
         $("#textsql").toggle(800).css("display","flex");
-        console.log("passe html");
     });
-
-
-
-
-
     var forEach = function (t, o, r) {
         if ("[object Object]" === Object.prototype.toString.call(t))
             for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
