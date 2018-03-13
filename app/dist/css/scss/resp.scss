@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
 @media all and (max-width: 1280px) and (min-width:1024px) {
+    
     .info {
         display: block;
         width: 66em;
@@ -14,53 +15,61 @@
         height: 20%;
         display: inline-flex;
     }
-    .divtext{
+    .divtext {
         height: 50%;
         width: 100%;
     }
- 
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-    .titreinfo{
-        height:15%;
+    #containcomp {
+        .comp {
+            // border: solid 0.5px #7DB0AA;
+            height: 10rem;
+            cursor: pointer;
+            .fiche {
+                display: none;
+            }
+            .imgcomp {}
+        }
+        .comp:hover{
+            border: solid 1.5px #76AC9E;
+        }
     }
-    .divtext{
+    .titreinfo {
+        height: 15%;
+        width: 100%;
+    }
+    .divtext {
         height: 50%;
         width: 100%;
     }
-    #textcss{
+    #textcss {
         height: 50%;
         width: 100%;
     }
-
     #autour {
-        
         float: left;
         width: 100%;
         height: 15%;
         display: inline-flex;
         flex-direction: row;
-        margin:0;
-
+        margin: 0;
     }
-    .bouton{
+    .bouton {
         margin: 0;
         margin-left: 1rem;
         width: 8rem;
     }
-
     .info {
         display: flex;
         width: 52em;
         height: 34em;
-       
     }
     #containermenu {
         display: flex;
     }
     #filter {
-       
         #fléche {
             background: transparent;
         }
@@ -71,7 +80,7 @@
     .texte {
         margin-left: 2em;
         margin-right: 2em;
-        font-size:0.9em;
+        font-size: 0.9em;
     }
     #containermenu {
         display: none;
@@ -222,65 +231,75 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-    #filter{
-        #intitulé{
+    #containcomp {
+        .comp {
+            margin:0;
+            height: 10rem;
+            cursor: pointer;
+            .fiche {
+                display: none;
+            }
+            .imgcomp {}
+        }
+        .comp:hover{
+            border: solid 1.5px #76AC9E;
+        }
+    }
+    #filter {
+        #intitulé {
             font-size: 2em;
         }
     }
-        #filter{
-            #fléche{
-                #arrowbot{
-                    display: block;
-                    height: 2.5em;
-                    width: 2.5em;
-                }
+    #filter {
+        #fléche {
+            #arrowbot {
+                display: block;
+                height: 2.5em;
+                width: 2.5em;
             }
         }
-    .titreinfo{
-        height:15%;
     }
-    .divtext{
+    .titreinfo {
+        height: 15%;
+    }
+    .divtext {
         height: 50%;
         width: 100%;
     }
-    #textcss{
+    #textcss {
         height: 50%;
         width: 100%;
     }
-
     #autour {
-        
         float: left;
         width: 90%;
         height: 15%;
         display: inline-flex;
         flex-direction: row;
-        margin:0;
-
+        margin: 0;
     }
-    .bouton{
+    .bouton {
         margin: 0;
         margin-left: 1rem;
         width: 6rem;
-        height:2.8rem;
+        height: 2.8rem;
     }
-
-    .titreinfo{
+    .titreinfo {
         font-size: 1rem;
     }
-    #html{
-        margin:0;
+    #html {
+        margin: 0;
     }
     .texte {
         margin-left: 2em;
         margin-right: 2em;
-        font-size:0.8em;
+        font-size: 0.8em;
     }
     .info {
         display: flex;
-align-items: center;
+        align-items: center;
         width: 34em;
-        height: 30em;
+        height: 40em;
     }
 }
 
@@ -288,74 +307,69 @@ align-items: center;
     .texte {
         margin-left: 2em;
         margin-right: 2em;
-        font-size:0.7em;
+        font-size: 0.7em;
     }
     .info {
         width: 20em;
         height: 25em;
     }
-    #filter{
-        #intitulé{
+    #filter {
+        #intitulé {
             font-size: 2em;
         }
     }
-        #filter{
-            #fléche{
-                #arrowbot{
-                    display: block;
-                    height: 2.5em;
-                    width: 2.5em;
-                }
+    #filter {
+        #fléche {
+            #arrowbot {
+                display: block;
+                height: 2.5em;
+                width: 2.5em;
             }
         }
-    .titreinfo{
-        height:15%;
     }
-    .divtext{
+    .titreinfo {
+        height: 15%;
+    }
+    .divtext {
         height: 50%;
         width: 100%;
     }
-    #textcss{
+    #textcss {
         height: 50%;
         width: 100%;
     }
-
     #autour {
-        
         float: left;
         width: 90%;
         height: 15%;
         display: inline-flex;
         flex-direction: row;
-        margin:0;
-
+        margin: 0;
     }
-    .bouton{
+    .bouton {
         margin: 0;
         margin-left: 1rem;
         width: 6rem;
-        height:2.8rem;
+        height: 2.8rem;
     }
-
-    .titreinfo{
+    .titreinfo {
         font-size: 1rem;
     }
-    #html{
-        margin:0;
+    #html {
+        margin: 0;
     }
     .texte {
         margin-left: 2em;
         margin-right: 2em;
-        font-size:0.8em;
+        font-size: 0.8em;
     }
     .info {
         display: flex;
-align-items: center;
+        align-items: center;
         width: 34em;
         height: 30em;
     }
 }
-
 
 @media all and (max-width: 320px) {
     .texte {
@@ -363,7 +377,7 @@ align-items: center;
         flex-wrap: wrap;
         margin-left: 2em;
         margin-right: 2em;
-        font-size:0.6em;
+        font-size: 0.6em;
     }
     .info {
         width: 18em;

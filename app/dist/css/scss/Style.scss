@@ -76,6 +76,10 @@ header {
             cursor: pointer;
             vertical-align: baseline;
             font-size: 1.2rem;
+            
+        }
+        .couleurbas{
+            border-bottom: 3px solid #82b3b3;
         }
         .titre:hover {
             color: #82b3b3;
@@ -109,7 +113,6 @@ header {
     #fotome:hover {
         opacity: 0.8;
         border: solid 3px #82b3b3;
-        box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705);
     }
     #fotome:active {
         opacity: 0.8;
@@ -248,6 +251,9 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    #comp1{
+        margin: 0;
+    }
     .comp {
         // border: solid 0.5px #7DB0AA;
         line-height: 1.2;
@@ -255,11 +261,16 @@ header {
         display: inline-flex;
         border-radius: 4px;
         justify-content: center;
+        align-items: center;
         width: 10.5rem;
         height: 16rem;
         flex-wrap: wrap;
         margin-left: 2rem;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1);
+        .imgcomp{
+            width: 3rem;
+            height: 3rem;
+        }
     
     }
 
@@ -294,7 +305,13 @@ header {
 #titretechno {
     color: #7DB0AA;
 }
+#titrecomp{
+    color:#76AC9E;
+}
 
+.imgsav{
+    display:none;
+}
 .bouton {
     border-radius: 3px;
     border: solid 1.5px #7DB0AA;
@@ -342,7 +359,7 @@ header {
     width: 90%;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: justify;
 }
 

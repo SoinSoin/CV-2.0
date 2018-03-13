@@ -35,19 +35,19 @@
 			</div>
 			<div id=containermenu>
 				<div id="techno" class="menu">
-					<a class="titre" href="#technologie">Technologies</a>
+					<a class="titre" id="titretechno" href="#technologie">Technologies</a>
 				</div>
 				<div id="comp" class="menu">
-					<a class="titre" href="#competence">Compétences</a>
+					<a class="titre" id="titrecomp" href="#competence">Compétences</a>
 				</div>
 				<div id="formation" class="menu">
-					<a class="titre" href="#forma">Formation</a>
+					<a class="titre" id="titreforma" href="#forma">Formation</a>
 				</div>
 				<div id="projet" class="menu">
-					<a class="titre" href="#prj">Projets</a>
+					<a class="titre" id="titreprj" href="#prj">Projets</a>
 				</div>
 				<div id="expe" class="menu">
-					<a class="titre" href="#experience">Expériences</a>
+					<a class="titre" id="titreexpe" href="#experience">Expériences</a>
 				</div>
 			</div>
 		</div>
@@ -74,7 +74,7 @@
 	<section class="pageWrapper">
 		<div id="containerinfo">
 			<div class="autourinfo" id="technologie">
-				<div class="info">
+				<div class="info" id="infotechno">
 					<div class="titreinfo" id="titretechno">
 						<h2>
 							Technologies
@@ -155,35 +155,59 @@
 				</div>
 			</div>
 			<div class="autourinfo" id="competence">
-				<div class="info">
-					<div class="titreinfo">
+				<div class="info" id="infocomp">
+					<div class="titreinfo" id="titrecomp">
 						<h2>
 							Compétences
 						</h2>
 					</div>
 					<div id="containcomp">
-						<div class="comp">
-							<p class="fiche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
+						<div class="comp"id="comp1">
+							<div class="imgtitre" id="imgtitre1">
+								<img class="imgcomp" id="imgcomp1" src="dist/img/suitcase.png">
+								<p class="imgsav" id="imgsav1">En savoir plus</p>
+							</div>
+							<p class="fiche" id="fiche1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
 							</p>
 						</div>
-						<div class="comp">
-							<p class="fiche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
+						<div class="comp" id="comp2">
+							<div class="imgtitre" id="imgtitre2">
+								<img class="imgcomp" id="imgcomp2" src="dist/img/suitcase.png">
+								<p class="imgsav" id="imgsav2">En savoir plus</p>
+							</div>
+							<p class="fiche" id="fiche2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
 							</p>
 						</div>
-						<div class="comp">
-							<p class="fiche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
+						<div class="comp" id="comp3">
+							<div class="imgtitre" id="imgtitre3">
+								<img class="imgcomp" id="imgcomp3" src="dist/img/suitcase.png">
+								<p class="imgsav" id="imgsav3">En savoir plus</p>
+							</div>
+							<p class="fiche" id="fiche3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
 							</p>
 						</div>
-						<div class="comp">
-							<p class="fiche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
+						<div class="comp" id="comp4">
+							<div class="imgtitre" id="imgtitre4">
+								<img class="imgcomp" id="imgcomp4" src="dist/img/suitcase.png">
+								<p class="imgsav" id="imgsav4">En savoir plus</p>
+							</div>
+							<p class="fiche" id="fiche4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
 							</p>
 						</div>
-						<div class="comp">
-							<p class="fiche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
+						<div class="comp" id="comp5">
+							<div class="imgtitre" id="imgtitre5">
+								<img class="imgcomp" id="imgcomp5" src="dist/img/suitcase.png">
+								<p class="imgsav" id="imgsav5">En savoir plus</p>
+							</div>
+							<p class="fiche" id="fiche5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
 							</p>
 						</div>
-						<div class="comp">
-							<p class="fiche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
+						<div class="comp" id="comp6">
+							<div class="imgtitre" id="imgtitre6">
+								<img class="imgcomp" id="imgcomp6" src="dist/img/suitcase.png">
+								<p class="imgsav" id="imgsav6" >En savoir plus</p>
+							</div>
+							<p class="fiche" id="fiche6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam vel voluptatem eos recusandae.
 							</p>
 						</div>
 					</div>
@@ -193,7 +217,7 @@
 				<div class="info">
 					<div class="titreinfo">
 						<h2>
-							Lorem ipsum
+							Formation
 						</h2>
 					</div>
 				</div>
@@ -225,7 +249,8 @@
 	</footer>
 
 	<script src="dist/js/jquery.min.js"></script>
-	<script src="dist/js/jquery.alton.min.js"></script>
+
+	<script src="dist/js/jquery.inview.min.js"></script>
 	<script src="dist/js/app.js"></script>
 </body>
 

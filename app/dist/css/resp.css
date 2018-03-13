@@ -17,8 +17,16 @@
     width: 100%; } }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+  #containcomp .comp {
+    height: 10rem;
+    cursor: pointer; }
+    #containcomp .comp .fiche {
+      display: none; }
+  #containcomp .comp:hover {
+    border: solid 1.5px #76AC9E; }
   .titreinfo {
-    height: 15%; }
+    height: 15%;
+    width: 100%; }
   .divtext {
     height: 50%;
     width: 100%; }
@@ -170,6 +178,14 @@
     transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1); } }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+  #containcomp .comp {
+    margin: 0;
+    height: 10rem;
+    cursor: pointer; }
+    #containcomp .comp .fiche {
+      display: none; }
+  #containcomp .comp:hover {
+    border: solid 1.5px #76AC9E; }
   #filter #intitulé {
     font-size: 2em; }
   #filter #fléche #arrowbot {
@@ -208,7 +224,7 @@
     display: flex;
     align-items: center;
     width: 34em;
-    height: 30em; } }
+    height: 40em; } }
 
 @media all and (min-width: 320px) and (max-width: 480px) {
   .texte {

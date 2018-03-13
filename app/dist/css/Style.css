@@ -70,6 +70,8 @@ header {
       cursor: pointer;
       vertical-align: baseline;
       font-size: 1.2rem; }
+    #containermenu .menu .couleurbas {
+      border-bottom: 3px solid #82b3b3; }
     #containermenu .menu .titre:hover {
       color: #82b3b3; }
     #containermenu .menu .titre:active {
@@ -95,8 +97,7 @@ header {
     cursor: pointer; }
   #moi #fotome:hover {
     opacity: 0.8;
-    border: solid 3px #82b3b3;
-    box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705); }
+    border: solid 3px #82b3b3; }
   #moi #fotome:active {
     opacity: 0.8;
     border: solid 3px #82b3b3;
@@ -215,17 +216,23 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
+  #containcomp #comp1 {
+    margin: 0; }
   #containcomp .comp {
     line-height: 1.2;
     text-align: center;
     display: inline-flex;
     border-radius: 4px;
     justify-content: center;
+    align-items: center;
     width: 10.5rem;
     height: 16rem;
     flex-wrap: wrap;
     margin-left: 2rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1); }
+    #containcomp .comp .imgcomp {
+      width: 3rem;
+      height: 3rem; }
 
 .info:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
@@ -252,6 +259,12 @@ header {
 
 #titretechno {
   color: #7DB0AA; }
+
+#titrecomp {
+  color: #76AC9E; }
+
+.imgsav {
+  display: none; }
 
 .bouton {
   border-radius: 3px;
@@ -296,7 +309,7 @@ header {
   width: 90%;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: justify; }
 
 #texthtml {
