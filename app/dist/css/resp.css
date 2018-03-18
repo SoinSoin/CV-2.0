@@ -7,7 +7,7 @@
     height: 34em; }
   #containermenu {
     display: flex; }
-  #autour {
+  .autour {
     float: left;
     width: 80%;
     height: 20%;
@@ -28,18 +28,22 @@
     height: 15%;
     width: 100%; }
   .divtext {
-    height: 50%;
+    height: 60%;
     width: 100%; }
   #textcss {
-    height: 50%;
+    height: 60%;
     width: 100%; }
-  #autour {
+  .autour {
     float: left;
     width: 100%;
     height: 15%;
     display: inline-flex;
     flex-direction: row;
     margin: 0; }
+    .autour #simplonlogo {
+      width: 9rem;
+      height: 8rem;
+      margin: 0; }
   .bouton {
     margin: 0;
     margin-left: 1rem;
@@ -51,9 +55,13 @@
   #containermenu {
     display: flex; }
   #filter #fléche {
-    background: transparent; } }
+    background: transparent; }
+  #textforma {
+    width: 100%; }
+  #imgforma {
+    width: 100%; } }
 
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .texte {
     margin-left: 2em;
     margin-right: 2em;
@@ -200,13 +208,17 @@
   #textcss {
     height: 50%;
     width: 100%; }
-  #autour {
+  .autour {
     float: left;
     width: 90%;
     height: 15%;
     display: inline-flex;
     flex-direction: row;
     margin: 0; }
+    .autour #simplonlogo {
+      width: 9rem;
+      height: 8rem;
+      margin: 0; }
   .bouton {
     margin: 0;
     margin-left: 1rem;
@@ -223,17 +235,22 @@
   .info {
     display: flex;
     align-items: center;
-    width: 34em;
-    height: 40em; } }
+    width: 40em;
+    height: 40em; }
+  #textforma {
+    width: 100%; }
+  #imgforma {
+    width: 100%; } }
 
-@media all and (min-width: 320px) and (max-width: 480px) {
-  .texte {
-    margin-left: 2em;
-    margin-right: 2em;
-    font-size: 0.7em; }
-  .info {
-    width: 20em;
-    height: 25em; }
+@media all and (max-width: 480px) {
+  #containcomp .comp {
+    margin: 0;
+    height: 10rem;
+    cursor: pointer; }
+    #containcomp .comp .fiche {
+      display: none; }
+  #containcomp .comp:hover {
+    border: solid 1.5px #76AC9E; }
   #filter #intitulé {
     font-size: 2em; }
   #filter #fléche #arrowbot {
@@ -248,13 +265,17 @@
   #textcss {
     height: 50%;
     width: 100%; }
-  #autour {
+  .autour {
     float: left;
     width: 90%;
     height: 15%;
     display: inline-flex;
     flex-direction: row;
     margin: 0; }
+    .autour #simplonlogo {
+      width: 9rem;
+      height: 8rem;
+      margin: 0; }
   .bouton {
     margin: 0;
     margin-left: 1rem;
@@ -271,18 +292,9 @@
   .info {
     display: flex;
     align-items: center;
-    width: 34em;
-    height: 30em; } }
-
-@media all and (max-width: 320px) {
-  .texte {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 2em;
-    margin-right: 2em;
-    font-size: 0.6em; }
-  .info {
-    width: 18em;
-    height: 22em; }
-  h1 {
-    font-size: 1em; } }
+    width: 40em;
+    height: 40em; }
+  #textforma {
+    width: 100%; }
+  #imgforma {
+    width: 100%; } }

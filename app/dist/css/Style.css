@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,700");
+a:focus {
+  outline: 0; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
 body {
   width: 100%;
   height: auto;
@@ -166,6 +172,9 @@ header {
   #filter #fléche:hover {
     background: transparent; }
 
+ol {
+  padding: 0; }
+
 @keyframes bounce {
   0%,
   20%,
@@ -190,7 +199,7 @@ header {
   justify-content: center; }
 
 .autourinfo {
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
   width: 100%;
   height: 108vh;
   display: flex;
@@ -233,11 +242,18 @@ header {
     #containcomp .comp .imgcomp {
       width: 3rem;
       height: 3rem; }
+    #containcomp .comp .fiche {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      margin: 0; }
 
 .info:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
-#autour {
+#titreprj {
+  color: #9BBA88; }
+
+.autour {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -246,6 +262,13 @@ header {
   float: left;
   width: 20%;
   height: 80%; }
+  .autour #simplonlogo {
+    width: 18rem;
+    height: 16rem;
+    margin-bottom: 4rem; }
+
+#titreforma {
+  color: #6FA891; }
 
 .titreinfo {
   position: relative;
@@ -266,24 +289,72 @@ header {
 .imgsav {
   display: none; }
 
+.icotech {
+  width: 10rem;
+  height: 10rem; }
+
+.large {
+  width: 13rem; }
+
+.longmin {
+  height: 6rem; }
+
+.long {
+  height: 13rem; }
+
+.redire {
+  position: relative;
+  display: contents;
+  color: #6FA891; }
+
+.redire:hover {
+  color: #EEDB7A; }
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+.ligne {
+  width: 100%; }
+
+#centercarr {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  margin-left: 5%; }
+
 .bouton {
   border-radius: 3px;
   border: solid 1.5px #7DB0AA;
   margin-left: 2rem;
   cursor: pointer;
-  width: 12rem;
+  width: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 3rem;
   margin-bottom: 1.5rem;
   font-weight: 300;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  opacity: 0.6; }
+  .bouton .language {
+    height: 40px;
+    width: 40px; }
 
 .bouton:hover {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1); }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1);
+  opacity: 1;
+  background: rgba(125, 176, 170, 0.8); }
+
+.bouton:active {
+  background: #7DB0AA; }
 
 .test {
+  opacity: 1;
   border: solid 1.5px #e0be33;
   background: #7DB0AA;
   color: whitesmoke; }
@@ -296,12 +367,20 @@ header {
   position: relative;
   float: right;
   height: 70%;
-  width: 75%;
+  width: 80%;
   display: none;
   /* -webkit-border-image: linear-gradient(to right, transparent 20%, #979292 20%, #979292 80%, transparent 80%);
     border-image-slice: 100%; */ }
 
+#textforma {
+  display: flex;
+  width: 50rem; }
+
+#imgforma {
+  width: 30rem; }
+
 .texte {
+  color: #464541;
   line-height: 1.3;
   display: flex;
   flex-wrap: wrap;
@@ -310,10 +389,35 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  text-align: justify; }
+  text-align: justify;
+  padding: 3vh; }
+
+.item {
+  background: #7DB0AA;
+  height: 20rem;
+  width: 35rem; }
+
+.item:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 #texthtml {
   display: flex; }
+
+#titrexpe {
+  color: #CCCE80; }
+
+.plus {
+  color: green; }
+
+.moins {
+  color: firebrick; }
+
+.sizegit {
+  font-size: 1.5rem; }
+
+.cell {
+  height: 10rem; }
 
 footer {
   width: 98%;
