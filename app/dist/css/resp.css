@@ -21,7 +21,8 @@
     height: 10rem;
     cursor: pointer; }
     #containcomp .comp .fiche {
-      display: none; }
+      display: none;
+      height: auto; }
   #containcomp .comp:hover {
     border: solid 1.5px #76AC9E; }
   .titreinfo {
@@ -59,9 +60,13 @@
   #textforma {
     width: 100%; }
   #imgforma {
-    width: 100%; } }
+    width: 100%; }
+  .sizegit {
+    font-size: 1.2rem; } }
 
 @media all and (max-width: 768px) {
+  .sizegit {
+    font-size: 1.2rem; }
   .texte {
     margin-left: 2em;
     margin-right: 2em;
@@ -191,7 +196,8 @@
     height: 10rem;
     cursor: pointer; }
     #containcomp .comp .fiche {
-      display: none; }
+      display: none;
+      height: auto; }
   #containcomp .comp:hover {
     border: solid 1.5px #76AC9E; }
   #filter #intitulé {
@@ -248,7 +254,8 @@
     height: 10rem;
     cursor: pointer; }
     #containcomp .comp .fiche {
-      display: none; }
+      display: none;
+      height: auto; }
   #containcomp .comp:hover {
     border: solid 1.5px #76AC9E; }
   #filter #intitulé {

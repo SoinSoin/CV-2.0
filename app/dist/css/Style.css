@@ -101,13 +101,6 @@ header {
     border-radius: 50%;
     border: solid 0.1px transparent;
     cursor: pointer; }
-  #moi #fotome:hover {
-    opacity: 0.8;
-    border: solid 3px #82b3b3; }
-  #moi #fotome:active {
-    opacity: 0.8;
-    border: solid 3px #82b3b3;
-    box-shadow: -1px 7px 68px 3px rgba(255, 255, 255, 0.705); }
 
 #filter {
   vertical-align: baseline;
@@ -137,7 +130,7 @@ header {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   #filter #fléche {
     opacity: 0.3;
     vertical-align: baseline;
@@ -206,6 +199,9 @@ ol {
   align-items: center;
   justify-content: center; }
 
+.num {
+  font-size: 1rem; }
+
 .info {
   flex-direction: column;
   flex-wrap: wrap;
@@ -240,12 +236,13 @@ ol {
     margin-left: 2rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1); }
     #containcomp .comp .imgcomp {
-      width: 3rem;
-      height: 3rem; }
+      width: 4rem;
+      height: 4rem; }
     #containcomp .comp .fiche {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
-      margin: 0; }
+      margin: 0;
+      height: 65%; }
 
 .info:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
@@ -283,10 +280,17 @@ ol {
 #titretechno {
   color: #7DB0AA; }
 
+.events-content {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 #titrecomp {
   color: #76AC9E; }
 
 .imgsav {
+  color: #e0be33;
   display: none; }
 
 .icotech {
@@ -392,12 +396,7 @@ ol {
   text-align: justify;
   padding: 3vh; }
 
-.item {
-  background: #7DB0AA;
-  height: 20rem;
-  width: 35rem; }
-
-.item:hover {
+.slideimg:hover {
   cursor: pointer;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
@@ -419,8 +418,75 @@ ol {
 .cell {
   height: 10rem; }
 
+.w-100 {
+  width: 100%;
+  justify-content: flex-start; }
+
+h3 {
+  color: #6EA890; }
+
 footer {
   width: 98%;
   height: 25vh;
   position: relative;
-  margin: 1%; }
+  margin: 1%;
+  display: flex;
+  align-items: flex-end; }
+  footer .beta {
+    height: 1.5rem;
+    width: 1.5rem; }
+  footer .git {
+    height: 3rem;
+    width: 3rem; }
+  footer .git:hover {
+    opacity: 0.7; }
+  footer .bta {
+    margin: 0;
+    border: solid 2px #6FA891;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    color: #6FA891;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  footer .bta:hover {
+    background: #eeeeee; }
+  footer #real {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+  footer .ui {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  footer .contacte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 40%;
+    height: 100%; }
+  footer .droite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 40%;
+    height: 100%; }
+  footer .reso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%; }
+  footer .weight {
+    color: #6FA891;
+    font-size: 1rem; }
+  footer .mail:hover {
+    color: #7DB0AA; }

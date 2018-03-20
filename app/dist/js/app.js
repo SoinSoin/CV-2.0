@@ -6,7 +6,7 @@ $(document).ready(function () {
         loop:true,
         margin:10,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:5000,
         autoplayHoverPause:true,
         responsive: {
             0:{
@@ -62,9 +62,9 @@ $(document).ready(function () {
             }
         });
     
-    $("#fotome").on("click", function () {
-        window.location.replace("moi.php");
-    });
+    // $("#fotome").on("click", function () {
+    //     window.location.replace("moi.php");
+    // });
 
     $('.titre,#fléche').on(' click', function () { // Au clic sur un élément
         var page = $(this).attr('href'); // Page cible
@@ -77,35 +77,35 @@ $(document).ready(function () {
 
     $("#html").on(" click", function () {
         $("#css,#js,#php,#sql").removeClass("test");
-        $("#textcss,#textjs,#textphp,#textsql").hide(800);
+        $("#textcss,#textjs,#textphp,#textsql").hide();
         $("#html").toggleClass("test");
-        $("#texthtml").animate({width:'toggle'},800).css("display", "flex");
+        $("#texthtml").animate({width:'toggle'},400).css("display", "flex");
     });
 
     $("#css").on(" click", function () {
         $("#html,#js,#php,#sql").removeClass("test");
-        $("#texthtml,#textjs,#textphp,#textsql").hide(800);
+        $("#texthtml,#textjs,#textphp,#textsql").hide();
         $("#css").toggleClass("test");
-        $("#textcss").animate({width:'toggle'},800).css("display", "flex");
+        $("#textcss").animate({width:'toggle'},400).css("display", "flex");
     });
 
     $("#js").on(" click", function () {
         $("#html,#css,#php,#sql").removeClass("test");
-        $("#texthtml,#textphp,#textsql,#textcss").hide(800);
+        $("#texthtml,#textphp,#textsql,#textcss").hide();
         $("#js").toggleClass("test");
-        $("#textjs").animate({width:'toggle'},800).css("display", "flex");
+        $("#textjs").animate({width:'toggle'},400).css("display", "flex");
     });
     $("#php").on(" click", function () {
         $("#html,#css,#js,#sql").removeClass("test");
-        $("#texthtml,#textjs,#textsql,#textcss").hide(800);
+        $("#texthtml,#textjs,#textsql,#textcss").hide();
         $("#php").toggleClass("test");
-        $("#textphp").animate({width:'toggle'},800).css("display", "flex");
+        $("#textphp").animate({width:'toggle'},400).css("display", "flex");
     });
     $("#sql").on(" click", function () {
         $("#html,#css,#php,#js").removeClass("test");
-        $("#texthtml,#textphp,#textjs,#textcss").hide(800);
+        $("#texthtml,#textphp,#textjs,#textcss").hide();
         $("#sql").toggleClass("test");
-        $("#textsql").animate({width:'toggle'},800).css("display", "flex");
+        $("#textsql").animate({width:'toggle'},400).css("display", "flex");
     });
     var forEach = function (t, o, r) {
         if ("[object Object]" === Object.prototype.toString.call(t))
