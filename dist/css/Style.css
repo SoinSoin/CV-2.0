@@ -19,6 +19,26 @@ body {
   z-index: -10;
   width: 45rem; }
 
+.down{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border-radius:50px;
+  z-index: 10;
+  background: hsla(48, 74%, 54%, 0.9);
+  position: fixed;
+  width:4em;
+  height:4em;
+  left:89%;
+  top:85%;
+
+}
+
+.sizePdf{
+  width:2em;
+  height:2em;
+}
+
 #nuage #nuage1 {
   top: 32rem;
   left: 1rem;
